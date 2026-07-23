@@ -23,7 +23,7 @@ const PORTFOLIO = {
 
   // shown as animated counters in the stats strip below the hero
   stats: [
-    { value: 12, suffix: "+", label: "Projects Shipped" },
+    { value: 13, suffix: "+", label: "Projects Shipped" },
     { value: 2, suffix: "", label: "Internships" },
     { value: 1, suffix: "", label: "Published Paper" },
     { value: 99.25, suffix: "%", label: "Top Model Accuracy" },
@@ -132,6 +132,15 @@ const PORTFOLIO = {
 
   // tags are used for the filter bar in the Projects section
   projects: [
+    {
+      title: "AI Research Assistant",
+      date: "June 2026 – July 2026",
+      tags: ["Featured", "Full-Stack", "AI/ML"],
+      description:
+        "Full-stack research assistant with a FastAPI/PostgreSQL (pgvector) backend and Next.js frontend, featuring RAG-based paper chat, citation-aware related-work search, and a knowledge graph across ingested papers. Benchmarked the ingestion pipeline against live Gemini and Voyage API calls, achieving end-to-end processing in under 4.3 seconds per paper.",
+      stack: ["FastAPI", "PostgreSQL", "pgvector", "Next.js", "Gemini API", "Voyage API"],
+      github: "https://github.com/jayminsheladia/AI-Powered-Personal-Research-Assistant",
+    },
     {
       title: "TechHire: AI-Powered Job Search Platform",
       date: "May 2026 – June 2026",
