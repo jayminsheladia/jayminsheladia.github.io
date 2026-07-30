@@ -151,15 +151,6 @@ const PORTFOLIO = {
       github: "https://github.com/jayminsheladia/Smart-Cards",
     },
     {
-      title: "Mind-Map: BERT Sentiment Analysis",
-      date: "July 2026",
-      tags: ["AI/ML"],
-      description:
-        "Flask web app that classifies text sentiment (Negative/Neutral/Positive) using a fine-tuned BERT model, with the tokenizer and model weights pulled from Google Drive at startup and served through a simple web form for real-time inference.",
-      stack: ["Python", "Flask", "BERT", "Transformers", "TensorFlow"],
-      github: "https://github.com/jayminsheladia/Mind-Map",
-    },
-    {
       title: "Model Router: Policy-Aware LLM Routing Layer",
       date: "July 2026",
       tags: ["Full-Stack", "AI/ML"],
@@ -196,31 +187,40 @@ const PORTFOLIO = {
       github: "https://github.com/jayminsheladia/Real-Time-Sign-Language-Detection",
     },
     {
-      title: "Intrusion Detection System",
-      date: "2024",
-      tags: ["AI/ML", "Security"],
+      title: "Mind-Map: BERT Sentiment Analysis",
+      date: "December 2024 – May 2025",
+      tags: ["AI/ML"],
       description:
-        "Deep learning-based intrusion detection system powered by a convolutional neural network, paired with a Flask GUI for interactive threat monitoring — detecting and flagging potential network intrusions in real time.",
-      stack: ["Python", "CNN", "Flask"],
-      github: "https://github.com/jayminsheladia/Intrusion-Detection-System",
-    },
-    {
-      title: "Malware Detection System",
-      date: "2024",
-      tags: ["AI/ML", "Security"],
-      description:
-        "Cybersecurity tool that identifies and flags phishing websites/malicious URLs using a Logistic Regression classifier, wrapped in a user-friendly Java GUI for accessible, real-time scanning.",
-      stack: ["Java", "Logistic Regression"],
-      github: "https://github.com/jayminsheladia/Malware-Detection-System",
+        "Flask web app that classifies text sentiment (Negative/Neutral/Positive) using a fine-tuned BERT model, with the tokenizer and model weights pulled from Google Drive at startup and served through a simple web form for real-time inference.",
+      stack: ["Python", "Flask", "BERT", "Transformers", "TensorFlow"],
+      github: "https://github.com/jayminsheladia/Mind-Map",
     },
     {
       title: "Credit Card Fraud Detection System",
-      date: "2024",
+      date: "July 2024 – September 2024",
       tags: ["AI/ML"],
       description:
         "Fraud detection model trained on 200,000+ credit card transactions using anomaly detection and supervised learning, reaching 98% accuracy — the project behind the CODTECH ML internship work.",
       stack: ["Python", "Scikit-learn"],
       github: "https://github.com/jayminsheladia/Credit-Card-Fraud-Detection-System",
+    },
+    {
+      title: "Fitness Tracker",
+      date: "July 2024 – September 2024",
+      tags: ["Full-Stack"],
+      description:
+        "MERN-stack fitness tracker for logging users and recording the date/duration of fitness activities, with a Material UI front end for a clean tracking experience.",
+      stack: ["MongoDB", "Express.js", "React", "Node.js", "Material UI"],
+      github: "https://github.com/jayminsheladia/Fitness-Tracker-App",
+    },
+    {
+      title: "Text-to-Image Classification",
+      date: "July 2024 – September 2024",
+      tags: ["AI/ML"],
+      description:
+        "Explores text-to-image generation using MinDALL·E, a lightweight variant of OpenAI's DALL·E, to generate visually coherent images conditioned on natural-language text prompts.",
+      stack: ["Python", "MinDALL-E", "Jupyter Notebook"],
+      github: "https://github.com/jayminsheladia/Text-To-Image-Classification",
     },
     {
       title: "Easy Rental: E-Commerce Website",
@@ -232,17 +232,8 @@ const PORTFOLIO = {
       github: "https://github.com/jayminsheladia/Easy-Rental-System",
     },
     {
-      title: "Text-to-Image Classification",
-      date: "2024",
-      tags: ["AI/ML"],
-      description:
-        "Explores text-to-image generation using MinDALL·E, a lightweight variant of OpenAI's DALL·E, to generate visually coherent images conditioned on natural-language text prompts.",
-      stack: ["Python", "MinDALL-E", "Jupyter Notebook"],
-      github: "https://github.com/jayminsheladia/Text-To-Image-Classification",
-    },
-    {
       title: "Chat-Bot",
-      date: "2024",
+      date: "January 2024 – March 2024",
       tags: ["AI/ML"],
       description:
         "Interactive chatbot with expertise across multiple domains, integrating a dynamic newspaper library for real-time information retrieval so responses stay current and accurate.",
@@ -250,8 +241,26 @@ const PORTFOLIO = {
       github: "https://github.com/jayminsheladia/Chat-Bot",
     },
     {
+      title: "Intrusion Detection System",
+      date: "December 2023 – February 2024",
+      tags: ["AI/ML", "Security"],
+      description:
+        "Deep learning-based intrusion detection system powered by a convolutional neural network, paired with a Flask GUI for interactive threat monitoring — detecting and flagging potential network intrusions in real time.",
+      stack: ["Python", "CNN", "Flask"],
+      github: "https://github.com/jayminsheladia/Intrusion-Detection-System",
+    },
+    {
+      title: "Malware Detection System",
+      date: "July 2023 – September 2023",
+      tags: ["AI/ML", "Security"],
+      description:
+        "Cybersecurity tool that identifies and flags phishing websites/malicious URLs using a Logistic Regression classifier, wrapped in a user-friendly Java GUI for accessible, real-time scanning.",
+      stack: ["Java", "Logistic Regression"],
+      github: "https://github.com/jayminsheladia/Malware-Detection-System",
+    },
+    {
       title: "Blog Post Website",
-      date: "2023",
+      date: "July 2023 – September 2023",
       tags: ["Full-Stack"],
       description:
         "Full-featured blogging platform built with Flask and SQLAlchemy, giving bloggers and readers a polished, user-friendly publishing experience.",
@@ -260,21 +269,12 @@ const PORTFOLIO = {
     },
     {
       title: "Weather Forecasting System",
-      date: "2023",
+      date: "July 2023 – September 2023",
       tags: ["Full-Stack"],
       description:
         "Weather lookup application powered by the OpenWeather API with a Django-based GUI, bringing accurate, real-time forecasts to users in a clean interface.",
       stack: ["Django", "OpenWeather API", "CSS"],
       github: "https://github.com/jayminsheladia/Weather-Forecasting-System",
-    },
-    {
-      title: "Fitness Tracker",
-      date: "2023",
-      tags: ["Full-Stack"],
-      description:
-        "MERN-stack fitness tracker for logging users and recording the date/duration of fitness activities, with a Material UI front end for a clean tracking experience.",
-      stack: ["MongoDB", "Express.js", "React", "Node.js", "Material UI"],
-      github: "https://github.com/jayminsheladia/Fitness-Tracker-App",
     },
   ],
 };
