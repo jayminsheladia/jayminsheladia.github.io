@@ -23,7 +23,7 @@ const PORTFOLIO = {
 
   // shown as animated counters in the stats strip below the hero
   stats: [
-    { value: 13, suffix: "+", label: "Projects Shipped" },
+    { value: 16, suffix: "+", label: "Projects Shipped" },
     { value: 2, suffix: "", label: "Internships" },
     { value: 1, suffix: "", label: "Published Paper" },
     { value: 99.25, suffix: "%", label: "Top Model Accuracy" },
@@ -140,6 +140,33 @@ const PORTFOLIO = {
         "Full-stack research assistant with a FastAPI/PostgreSQL (pgvector) backend and Next.js frontend, featuring RAG-based paper chat, citation-aware related-work search, and a knowledge graph across ingested papers. Benchmarked the ingestion pipeline against live Gemini and Voyage API calls, achieving end-to-end processing in under 4.3 seconds per paper.",
       stack: ["FastAPI", "PostgreSQL", "pgvector", "Next.js", "Gemini API", "Voyage API"],
       github: "https://github.com/jayminsheladia/AI-Powered-Personal-Research-Assistant",
+    },
+    {
+      title: "Smart Cards: AI-Powered Adaptive Flashcards",
+      date: "July 2026",
+      tags: ["AI/ML"],
+      description:
+        "AI-powered study tool that turns raw lecture notes into an adaptive spaced-repetition flashcard system, using an LLM to grade short-answer responses against a rubric instead of binary flip-cards. A modified SM-2 scheduler derives its quality signal from the LLM's continuous grading score and damps interval growth for cards judged inherently harder at generation time.",
+      stack: ["Python", "Streamlit", "Gemini API", "SQLite"],
+      github: "https://github.com/jayminsheladia/Smart-Cards",
+    },
+    {
+      title: "Mind-Map: BERT Sentiment Analysis",
+      date: "July 2026",
+      tags: ["AI/ML"],
+      description:
+        "Flask web app that classifies text sentiment (Negative/Neutral/Positive) using a fine-tuned BERT model, with the tokenizer and model weights pulled from Google Drive at startup and served through a simple web form for real-time inference.",
+      stack: ["Python", "Flask", "BERT", "Transformers", "TensorFlow"],
+      github: "https://github.com/jayminsheladia/Mind-Map",
+    },
+    {
+      title: "Model Router: Policy-Aware LLM Routing Layer",
+      date: "July 2026",
+      tags: ["Full-Stack", "AI/ML"],
+      description:
+        "Policy-aware routing layer for LLM requests that goes beyond cost/complexity-based routing by adding identity, budget, and authorization awareness — a heuristic classifier, per-user/per-project policy engine, budget ledger, full audit trail, and a feedback loop that biases future routing decisions from escalate/downgrade signals, exposed through a FastAPI backend and live dashboard.",
+      stack: ["Python", "FastAPI", "SQLite", "Pydantic"],
+      github: "https://github.com/jayminsheladia/Model_Router",
     },
     {
       title: "TechHire: AI-Powered Job Search Platform",
