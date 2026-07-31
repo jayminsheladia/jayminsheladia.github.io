@@ -250,7 +250,7 @@ const PORTFOLIO = {
       github: "https://github.com/jayminsheladia/Intrusion-Detection-System",
     },
     {
-      title: "Malware Detection System",
+      title: "Malware & Phishing Detection System",
       date: "July 2023 – September 2023",
       tags: ["AI/ML", "Security"],
       description:
