@@ -534,7 +534,7 @@
       item.addEventListener("click", () => runCommand(cmd));
       item.addEventListener("mouseenter", () => {
         cmdkActiveIndex = i;
-        renderCmdk();
+        cmdkList.querySelectorAll(".cmdk-item").forEach((n, idx) => n.classList.toggle("active", idx === i));
       });
       cmdkList.appendChild(item);
     });
