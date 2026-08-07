@@ -133,6 +133,15 @@ const PORTFOLIO = {
   // tags are used for the filter bar in the Projects section
   projects: [
     {
+      title: "Model Router: Policy-Aware LLM Routing Layer",
+      date: "July 2026 – August 2026",
+      tags: ["Featured", "Full-Stack", "AI/ML"],
+      description:
+        "Policy-aware routing layer for LLM requests that goes beyond cost/complexity-based routing by adding identity, budget, and authorization awareness — a heuristic classifier, per-user/per-project policy engine, budget ledger, full audit trail, and a feedback loop that biases future routing decisions from escalate/downgrade signals, exposed through a FastAPI backend and live dashboard.",
+      stack: ["Python", "FastAPI", "SQLite", "Pydantic"],
+      github: "https://github.com/jayminsheladia/Model_Router",
+    },
+    {
       title: "AI Research Assistant",
       date: "June 2026 – July 2026",
       tags: ["Featured", "Full-Stack", "AI/ML"],
@@ -149,15 +158,6 @@ const PORTFOLIO = {
         "AI-powered study tool that turns raw lecture notes into an adaptive spaced-repetition flashcard system, using an LLM to grade short-answer responses against a rubric instead of binary flip-cards. A modified SM-2 scheduler derives its quality signal from the LLM's continuous grading score and damps interval growth for cards judged inherently harder at generation time.",
       stack: ["Python", "Streamlit", "Gemini API", "SQLite"],
       github: "https://github.com/jayminsheladia/Smart-Cards",
-    },
-    {
-      title: "Model Router: Policy-Aware LLM Routing Layer",
-      date: "July 2026",
-      tags: ["Full-Stack", "AI/ML"],
-      description:
-        "Policy-aware routing layer for LLM requests that goes beyond cost/complexity-based routing by adding identity, budget, and authorization awareness — a heuristic classifier, per-user/per-project policy engine, budget ledger, full audit trail, and a feedback loop that biases future routing decisions from escalate/downgrade signals, exposed through a FastAPI backend and live dashboard.",
-      stack: ["Python", "FastAPI", "SQLite", "Pydantic"],
-      github: "https://github.com/jayminsheladia/Model_Router",
     },
     {
       title: "TechHire: AI-Powered Job Search Platform",
