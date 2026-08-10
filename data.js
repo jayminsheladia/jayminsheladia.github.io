@@ -71,6 +71,8 @@ const PORTFOLIO = {
       "RESTful API Design",
       "CI/CD",
       "Unix/Linux",
+      "Reinforcement Learning",
+      "Time Series Analysis",
     ],
   },
 
