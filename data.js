@@ -23,7 +23,7 @@ const PORTFOLIO = {
 
   // shown as animated counters in the stats strip below the hero
   stats: [
-    { value: 16, suffix: "+", label: "Projects Shipped" },
+    { value: 17, suffix: "+", label: "Projects Shipped" },
     { value: 2, suffix: "", label: "Internships" },
     { value: 1, suffix: "", label: "Published Paper" },
     { value: 99.25, suffix: "%", label: "Top Model Accuracy" },
@@ -134,6 +134,15 @@ const PORTFOLIO = {
 
   // tags are used for the filter bar in the Projects section
   projects: [
+    {
+      title: "Agent Reliability Infrastructure (ARI)",
+      date: "August 2026",
+      tags: ["Full-Stack", "AI/ML"],
+      description:
+        "Observability and control-plane layer for multi-agent LLM systems, sitting between an orchestrator and the underlying model calls to address the hand-off, safety, and debugging gaps agent frameworks leave open. Implements a hand-rolled agent loop with structured event logging, a CLI/web trace-replay viewer, and a policy engine backed by a Redis approval queue that pauses the loop pending human sign-off on risky tool calls.",
+      stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Redis", "SQLAlchemy", "Alembic"],
+      github: "https://github.com/jayminsheladia/agent-reliability-infrastructure",
+    },
     {
       title: "Model Router: Policy-Aware LLM Routing Layer",
       date: "July 2026 – August 2026",
