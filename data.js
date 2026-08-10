@@ -46,6 +46,14 @@ const PORTFOLIO = {
     },
   ],
 
+  certifications: [
+    {
+      name: "IBM Machine Learning Professional Certificate",
+      issuer: "Coursera",
+      date: "2024",
+    },
+  ],
+
   skills: {
     Languages: ["C", "C++", "Python", "Java", "JavaScript", "HTML", "SQL"],
     "Frameworks / Libraries": [
