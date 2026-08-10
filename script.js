@@ -265,6 +265,19 @@
     educationList.appendChild(item);
   });
 
+  // ---------- Certifications ----------
+  const certificationsList = document.getElementById("certificationsList");
+  d.certifications.forEach((c) => {
+    const item = reveal(el("div", "timeline-item"));
+    item.style.setProperty("--item-color", SECTION_COLORS.education);
+    const head = el("div", "timeline-head");
+    head.appendChild(el("h3", null, c.name));
+    head.appendChild(el("span", "timeline-meta", c.date));
+    item.appendChild(head);
+    item.appendChild(el("p", "detail", c.issuer));
+    certificationsList.appendChild(item);
+  });
+
   // ---------- Leadership ----------
   const leadershipList = document.getElementById("leadershipList");
   d.leadership.forEach((l) => {
