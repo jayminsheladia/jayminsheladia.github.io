@@ -51,6 +51,7 @@ const PORTFOLIO = {
       name: "IBM Machine Learning Professional Certificate",
       issuer: "Coursera",
       date: "2024",
+      url: "https://www.coursera.org/account/accomplishments/specialization/YN945H05XAT5",
     },
   ],
 

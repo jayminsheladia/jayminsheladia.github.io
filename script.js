@@ -271,7 +271,16 @@
     const item = reveal(el("div", "timeline-item"));
     item.style.setProperty("--item-color", SECTION_COLORS.education);
     const head = el("div", "timeline-head");
-    head.appendChild(el("h3", null, c.name));
+    if (c.url) {
+      const link = el("a", "cert-link", c.name);
+      link.href = c.url;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.title = "Verify credential";
+      head.appendChild(el("h3", null, "")).appendChild(link);
+    } else {
+      head.appendChild(el("h3", null, c.name));
+    }
     head.appendChild(el("span", "timeline-meta", c.date));
     item.appendChild(head);
     item.appendChild(el("p", "detail", c.issuer));
