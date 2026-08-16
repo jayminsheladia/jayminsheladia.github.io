@@ -25,6 +25,7 @@
   };
   const CONTACT_COLORS = {
     Email: "#60a5fa",
+    "USC Email": "#38bdf8",
     Phone: "#34d399",
     GitHub: "#a78bfa",
     LinkedIn: "#38bdf8",
@@ -425,6 +426,7 @@
   const contactGrid = document.getElementById("contactGrid");
   const contactItems = [
     { label: "Email", value: d.profile.email, href: `mailto:${d.profile.email}` },
+    { label: "USC Email", value: d.profile.secondaryEmail, href: `mailto:${d.profile.secondaryEmail}` },
     { label: "Phone", value: d.profile.phone, href: `tel:${d.profile.phone.replace(/[^\d+]/g, "")}` },
     { label: "GitHub", value: "jayminsheladia", href: d.profile.links.github },
     { label: "LinkedIn", value: "jayminsheladia", href: d.profile.links.linkedin },
@@ -444,7 +446,7 @@
     card.appendChild(el("span", "label", c.label));
     card.appendChild(el("span", "value", c.value));
 
-    if (c.label === "Email" || c.label === "Phone") {
+    if (c.label === "Email" || c.label === "USC Email" || c.label === "Phone") {
       const copyBtn = el(
         "button",
         "copy-btn",
@@ -532,6 +534,7 @@
     { title: "Open LeetCode", hint: "External", action: () => window.open(d.profile.links.leetcode, "_blank", "noopener") },
     { title: "Download Résumé", hint: "PDF", action: () => window.open(d.profile.resume, "_blank", "noopener") },
     { title: "Copy Email Address", hint: d.profile.email, action: () => copyText(d.profile.email) },
+    { title: "Copy USC Email Address", hint: d.profile.secondaryEmail, action: () => copyText(d.profile.secondaryEmail) },
     { title: "Copy Phone Number", hint: d.profile.phone, action: () => copyText(d.profile.phone) },
     {
       title: "Toggle Theme",
