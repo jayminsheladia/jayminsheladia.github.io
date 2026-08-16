@@ -24,7 +24,7 @@
     leadership: "#f472b6",
   };
   const CONTACT_COLORS = {
-    Email: "#60a5fa",
+    "USC Email": "#60a5fa",
     Gmail: "#38bdf8",
     Phone: "#34d399",
     GitHub: "#a78bfa",
@@ -425,7 +425,7 @@
   // ---------- Contact ----------
   const contactGrid = document.getElementById("contactGrid");
   const contactItems = [
-    { label: "Email", value: d.profile.email, href: `mailto:${d.profile.email}` },
+    { label: "USC Email", value: d.profile.email, href: `mailto:${d.profile.email}` },
     { label: "Gmail", value: d.profile.secondaryEmail, href: `mailto:${d.profile.secondaryEmail}` },
     { label: "Phone", value: d.profile.phone, href: `tel:${d.profile.phone.replace(/[^\d+]/g, "")}` },
     { label: "GitHub", value: "jayminsheladia", href: d.profile.links.github },
@@ -444,10 +444,9 @@
       }
     }
     card.appendChild(el("span", "label", c.label));
-    const valueHtml = c.value.includes("@") ? c.value.replace("@", "@<wbr>") : c.value;
-    card.appendChild(el("span", "value", valueHtml));
+    card.appendChild(el("span", "value", c.value));
 
-    if (c.label === "Email" || c.label === "Gmail" || c.label === "Phone") {
+    if (c.label === "USC Email" || c.label === "Gmail" || c.label === "Phone") {
       const copyBtn = el(
         "button",
         "copy-btn",
@@ -534,7 +533,7 @@
     { title: "Open LinkedIn", hint: "External", action: () => window.open(d.profile.links.linkedin, "_blank", "noopener") },
     { title: "Open LeetCode", hint: "External", action: () => window.open(d.profile.links.leetcode, "_blank", "noopener") },
     { title: "Download Résumé", hint: "PDF", action: () => window.open(d.profile.resume, "_blank", "noopener") },
-    { title: "Copy Email Address", hint: d.profile.email, action: () => copyText(d.profile.email) },
+    { title: "Copy USC Email Address", hint: d.profile.email, action: () => copyText(d.profile.email) },
     { title: "Copy Gmail Address", hint: d.profile.secondaryEmail, action: () => copyText(d.profile.secondaryEmail) },
     { title: "Copy Phone Number", hint: d.profile.phone, action: () => copyText(d.profile.phone) },
     {
