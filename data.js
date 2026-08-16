@@ -8,8 +8,8 @@ const PORTFOLIO = {
     tagline:
       "MS CS student at USC building full-stack products and machine learning systems — from RESTful platforms to deep learning pipelines.",
     location: "Los Angeles, CA",
-    email: "sheladia@usc.edu",
-    secondaryEmail: "jayminsheladia17@gmail.com",
+    email: "jayminsheladia17@gmail.com",
+    secondaryEmail: "sheladia@usc.edu",
     phone: "+1 (213) 331-9625",
     photo: "assets/profile.jpeg",
     resume: "assets/Jaymin_Sheladia_Resume.pdf",
