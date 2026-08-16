@@ -146,10 +146,10 @@ const PORTFOLIO = {
     {
       title: "Agent Reliability Infrastructure (ARI)",
       date: "August 2026",
-      tags: ["Full-Stack", "AI/ML"],
+      tags: ["Featured", "Full-Stack", "AI/ML"],
       description:
-        "Observability and control-plane layer for multi-agent LLM systems, sitting between an orchestrator and the underlying model calls to address the hand-off, safety, and debugging gaps agent frameworks leave open. Implements a hand-rolled agent loop with structured event logging, a CLI/web trace-replay viewer, and a policy engine backed by a Redis approval queue that pauses the loop pending human sign-off on risky tool calls.",
-      stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Redis", "SQLAlchemy", "Alembic"],
+        "End-to-end control-plane layer for multi-agent LLM systems, sitting between an orchestrator and the underlying model calls to solve problems agent frameworks leave open: curated context hand-off between agents via similarity+recency retrieval over embedded step outputs, human-approval gates on risky tool calls through a Redis-backed queue, full CLI/web trace-replay debugging, and inline loop/cost-anomaly detection. A real 5-step agent pipeline (researcher → drafter → reviewer → notifier → executor) exercises all four mechanisms together in a live demo, backed by Postgres/pgvector, Redis, and 17 passing tests.",
+      stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Redis", "Claude API", "SQLAlchemy", "Alembic"],
       github: "https://github.com/jayminsheladia/agent-reliability-infrastructure",
     },
     {
@@ -157,8 +157,8 @@ const PORTFOLIO = {
       date: "July 2026 – August 2026",
       tags: ["Featured", "Full-Stack", "AI/ML"],
       description:
-        "Policy-aware routing layer for LLM requests that goes beyond cost/complexity-based routing by adding identity, budget, and authorization awareness — a heuristic classifier, per-user/per-project policy engine, budget ledger, full audit trail, and a feedback loop that biases future routing decisions from escalate/downgrade signals, exposed through a FastAPI backend and live dashboard.",
-      stack: ["Python", "FastAPI", "SQLite", "Pydantic"],
+        "Policy-aware routing layer for LLM requests that goes beyond prompt-complexity routing (RouteLLM, LiteLLM) by adding identity, per-project authorization, budget enforcement, and a full audit trail — plus a Quality/Cost/Balanced routing dial, automatic tier failover on real Groq API errors, and per-user conversation memory. Benchmarked the heuristic classifier against a 30-prompt hand-labeled oracle using live Groq calls, reaching 100% accuracy (up from an initial 80%) while cutting inference cost 27.9% versus always routing to the frontier tier.",
+      stack: ["Python", "FastAPI", "SQLite", "Groq API", "Claude API", "Pydantic"],
       github: "https://github.com/jayminsheladia/Model_Router",
     },
     {
