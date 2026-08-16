@@ -25,7 +25,7 @@
   };
   const CONTACT_COLORS = {
     Email: "#60a5fa",
-    "USC Email": "#38bdf8",
+    Gmail: "#38bdf8",
     Phone: "#34d399",
     GitHub: "#a78bfa",
     LinkedIn: "#38bdf8",
@@ -426,11 +426,11 @@
   const contactGrid = document.getElementById("contactGrid");
   const contactItems = [
     { label: "Email", value: d.profile.email, href: `mailto:${d.profile.email}` },
-    { label: "USC Email", value: d.profile.secondaryEmail, href: `mailto:${d.profile.secondaryEmail}` },
+    { label: "Gmail", value: d.profile.secondaryEmail, href: `mailto:${d.profile.secondaryEmail}` },
     { label: "Phone", value: d.profile.phone, href: `tel:${d.profile.phone.replace(/[^\d+]/g, "")}` },
     { label: "GitHub", value: "jayminsheladia", href: d.profile.links.github },
     { label: "LinkedIn", value: "jayminsheladia", href: d.profile.links.linkedin },
-    { label: "LeetCode", value: "Jayminsheladia", href: d.profile.links.leetcode },
+    { label: "LeetCode", value: "jayminsheladia", href: d.profile.links.leetcode },
     { label: "Location", value: d.profile.location, href: null },
   ];
   contactItems.forEach((c) => {
@@ -447,7 +447,7 @@
     const valueHtml = c.value.includes("@") ? c.value.replace("@", "@<wbr>") : c.value;
     card.appendChild(el("span", "value", valueHtml));
 
-    if (c.label === "Email" || c.label === "USC Email" || c.label === "Phone") {
+    if (c.label === "Email" || c.label === "Gmail" || c.label === "Phone") {
       const copyBtn = el(
         "button",
         "copy-btn",
@@ -535,7 +535,7 @@
     { title: "Open LeetCode", hint: "External", action: () => window.open(d.profile.links.leetcode, "_blank", "noopener") },
     { title: "Download Résumé", hint: "PDF", action: () => window.open(d.profile.resume, "_blank", "noopener") },
     { title: "Copy Email Address", hint: d.profile.email, action: () => copyText(d.profile.email) },
-    { title: "Copy USC Email Address", hint: d.profile.secondaryEmail, action: () => copyText(d.profile.secondaryEmail) },
+    { title: "Copy Gmail Address", hint: d.profile.secondaryEmail, action: () => copyText(d.profile.secondaryEmail) },
     { title: "Copy Phone Number", hint: d.profile.phone, action: () => copyText(d.profile.phone) },
     {
       title: "Toggle Theme",

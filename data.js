@@ -8,15 +8,15 @@ const PORTFOLIO = {
     tagline:
       "Most of what I build sits at the intersection of two questions I keep coming back to: how do you make a system genuinely intelligent, and how do you make sure you can trust it once it's out of your hands? That tension between capability and reliability is what pulled me from full-stack engineering into machine learning — and it's where most of my curiosity still lives.",
     location: "Los Angeles, CA",
-    email: "jayminsheladia17@gmail.com",
-    secondaryEmail: "sheladia@usc.edu",
+    email: "sheladia@usc.edu",
+    secondaryEmail: "jayminsheladia17@gmail.com",
     phone: "+1 (213) 331-9625",
     photo: "assets/profile.jpeg",
     resume: "assets/Jaymin_Sheladia_Resume.pdf",
     links: {
       github: "https://github.com/jayminsheladia",
       linkedin: "https://linkedin.com/in/jayminsheladia",
-      leetcode: "https://leetcode.com/Jayminsheladia",
+      leetcode: "https://leetcode.com/u/jayminsheladia/",
     },
     githubUsername: "jayminsheladia",
   },
