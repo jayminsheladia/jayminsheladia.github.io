@@ -444,7 +444,8 @@
       }
     }
     card.appendChild(el("span", "label", c.label));
-    card.appendChild(el("span", "value", c.value));
+    const valueHtml = c.value.includes("@") ? c.value.replace("@", "@<wbr>") : c.value;
+    card.appendChild(el("span", "value", valueHtml));
 
     if (c.label === "Email" || c.label === "USC Email" || c.label === "Phone") {
       const copyBtn = el(
