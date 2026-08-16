@@ -6,7 +6,7 @@ const PORTFOLIO = {
     initials: "JS",
     title: "Software Engineer · ML/AI",
     tagline:
-      "MS CS student at USC building full-stack products and machine learning systems — from RESTful platforms to deep learning pipelines.",
+      "MS CS student at USC shipping production-grade AI systems and full-stack platforms — from an LLM router that cut inference costs 28% to a 99.25%-accurate deep learning model backed by published research.",
     location: "Los Angeles, CA",
     email: "jayminsheladia17@gmail.com",
     secondaryEmail: "sheladia@usc.edu",
