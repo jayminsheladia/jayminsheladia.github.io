@@ -6,7 +6,7 @@ const PORTFOLIO = {
     initials: "JS",
     title: "Software Engineer · ML/AI",
     tagline:
-      "Most of what I build sits at the intersection of two questions I keep coming back to: how do you make a system genuinely intelligent, and how do you make sure you can trust it once it's out of your hands? That tension between capability and reliability is what pulled me from full-stack engineering into machine learning — and it's where most of my curiosity still lives.",
+      "A Master's student in Computer Science at USC. I like building things at the intersection of AI and software systems — recently a policy-aware LLM router with authorization, budget controls, and audit logging, and a RAG-based research assistant that pulls answers straight from source papers. Before USC, I worked as a software engineer at Cognizant building full-stack applications, interned as a machine learning engineer working on fraud detection, and co-authored a published research paper on deep learning for malicious URL detection. I enjoy working across the stack, from backend systems to applied ML.",
     location: "Los Angeles, CA",
     email: "sheladia@usc.edu",
     secondaryEmail: "jayminsheladia17@gmail.com",
