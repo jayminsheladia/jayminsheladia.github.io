@@ -115,8 +115,8 @@ const PORTFOLIO = {
       location: "Coimbatore, India",
       date: "May 2025 – September 2025",
       bullets: [
-        "Engineered a full-stack Travel Planner and Booking System, designing 10+ RESTful APIs in Spring Boot and Angular to modernize manual booking workflows and centralize itinerary, booking, and preference management.",
-        "Integrated a Generative AI-based recommendation engine analyzing user interests, budget, and trip duration to surface personalized suggestions that simplified the booking decision process.",
+        "Engineered a full-stack Travel Planner and Booking System using Spring Boot and Angular, designing and integrating 10+ RESTful APIs to centralize itinerary, booking, and user preference data across the booking workflow.",
+        "Integrated a Generative AI-based recommendation engine that evaluates 3 key signals — user interests, budget, and trip duration — to generate context-aware personalized travel recommendations for users.",
       ],
     },
     {
@@ -125,8 +125,8 @@ const PORTFOLIO = {
       location: "Remote",
       date: "June 2024 – August 2024",
       bullets: [
-        "Designed and trained a fraud detection model applying anomaly detection and supervised learning on 200,000+ credit card transactions, reaching 98% accuracy.",
-        "Optimized algorithms and rebuilt data preprocessing pipelines for existing production models, enhancing accuracy by 12–15% across multiple live ML projects.",
+        "Designed and trained a fraud detection model using anomaly detection and supervised machine learning on over 200,000 credit card transactions, reaching 98% classification accuracy on live transaction data.",
+        "Optimized machine learning algorithms and re-engineered data preprocessing pipelines for production models, improving predictive accuracy by 12–15% across multiple live projects and reporting dashboards.",
       ],
     },
   ],
@@ -189,7 +189,7 @@ const PORTFOLIO = {
       date: "June 2026 – July 2026",
       tags: ["Featured", "Full-Stack", "AI/ML"],
       description:
-        "Full-stack research assistant with a FastAPI/PostgreSQL (pgvector) backend and Next.js frontend, featuring RAG-based paper chat, citation-aware related-work search, and a knowledge graph across ingested papers. Benchmarked the ingestion pipeline against live Gemini and Voyage API calls, achieving end-to-end processing in under 4.3 seconds per paper.",
+        "Full-stack research assistant with a FastAPI/PostgreSQL (pgvector) backend and Next.js frontend, featuring RAG-based paper chat, citation-aware related-work search, and a knowledge graph across ingested papers. Profiled the end-to-end ingestion pipeline across live LLM inference, embedding, and persistence stages, achieving latency under 4.3 seconds per paper, with LLM inference accounting for 85–95% of total latency.",
       stack: ["FastAPI", "PostgreSQL", "pgvector", "Next.js", "Gemini API", "Voyage API"],
       github: "https://github.com/jayminsheladia/AI-Powered-Personal-Research-Assistant",
     },
@@ -216,7 +216,7 @@ const PORTFOLIO = {
       date: "March 2026 – April 2026",
       tags: ["Featured", "Algorithms"],
       description:
-        "Implemented and benchmarked the classical Needleman-Wunsch dynamic programming algorithm against Hirschberg's memory-efficient divide-and-conquer approach for large genomic sequence inputs. Reduced memory usage from O(m×n) to O(m+n), cutting peak memory consumption by up to 90% on large inputs while preserving identical optimal alignments.",
+        "Implemented and comparatively evaluated classical Needleman-Wunsch dynamic programming against Hirschberg's memory-efficient divide-and-conquer algorithm for global DNA sequence alignment. Validated the theoretical O(m×n) → O(m+n) memory reduction empirically, confirming up to 90% lower peak memory usage with bit-for-bit identical optimal alignments across increasing input sizes.",
       stack: ["Python"],
       github: "https://github.com/jayminsheladia/Sequence-Alignment",
     },
