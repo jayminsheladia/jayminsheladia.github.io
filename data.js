@@ -6,7 +6,7 @@ const PORTFOLIO = {
     initials: "JS",
     title: "Software Engineer · ML/AI",
     tagline:
-      "A Master's student in Computer Science at USC. I like building things at the intersection of AI and software systems — recently a policy-aware LLM router with authorization, budget controls, and audit logging, and a RAG-based research assistant that pulls answers straight from source papers. Before USC, I worked as a software engineer at Cognizant building full-stack applications, interned as a machine learning engineer working on fraud detection, and co-authored a published research paper on deep learning for malicious URL detection. I enjoy working across the stack, from backend systems to applied ML.",
+      "A Master's student in Computer Science at USC, working on AI systems and full-stack development. Lately I've been building a policy-aware LLM router with authorization, budget controls, and audit logging, and a RAG-based research assistant that pulls answers straight from source papers. Before USC, I worked as a software engineer at Cognizant building full-stack applications, interned as a machine learning engineer on fraud detection, and co-authored a published research paper on deep learning for malicious URL detection.",
     location: "Los Angeles, CA",
     email: "sheladia@usc.edu",
     secondaryEmail: "jayminsheladia17@gmail.com",
