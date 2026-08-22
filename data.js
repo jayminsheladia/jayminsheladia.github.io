@@ -78,6 +78,7 @@ const PORTFOLIO = {
       "YOLOv11",
       "OpenAI API",
       "Claude API",
+      "Voyage AI",
     ],
     "Databases": ["MySQL", "MongoDB", "PostgreSQL", "Redis"],
     "Tools": [
@@ -204,11 +205,11 @@ const PORTFOLIO = {
     },
     {
       title: "TechHire: AI-Powered Job Search Platform",
-      date: "May 2026 – June 2026",
+      date: "June 2026 – August 2026",
       tags: ["Featured", "Full-Stack", "AI/ML"],
       description:
-        "Full-stack job search platform with a React/Vite frontend and FastAPI/PostgreSQL backend, simplifying job discovery with filters across 6 dimensions including skills, salary, and visa sponsorship. Uses the Groq API to auto-generate AI job summaries, plus resume upload, text extraction, and resume-to-job comparison, backed by automated Python scrapers pulling live listings.",
-      stack: ["React", "Vite", "FastAPI", "PostgreSQL", "Groq API", "Python"],
+        "Full-stack AI-powered job search platform aggregating 1,037 real job postings from 27+ company boards via Greenhouse, Lever, and Ashby integrations. An AI-driven job intelligence pipeline runs 3 Groq LLMs concurrently with a synthesis pass to generate context-aware job summaries, resume-to-job scoring, and section-level rewrite recommendations. Redis-backed query caching and rate limiting cut mean request latency from 5.81 ms to 2.81 ms (2.1x speedup) while sustaining approximately 498 req/s at 40 concurrent requests.",
+      stack: ["React", "FastAPI", "PostgreSQL", "Redis", "Groq API", "Python"],
       github: "https://github.com/jayminsheladia/TechHire",
     },
     {
