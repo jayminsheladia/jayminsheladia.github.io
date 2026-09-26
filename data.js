@@ -79,8 +79,11 @@ const PORTFOLIO = {
       "OpenAI API",
       "Claude API",
       "Voyage AI",
+      "XGBoost",
+      "LangGraph",
+      "Groq API",
     ],
-    "Databases": ["MySQL", "MongoDB", "PostgreSQL", "Redis"],
+    "Databases": ["MySQL", "MongoDB", "PostgreSQL", "Redis", "Apache Kafka"],
     "Tools": [
       "Git",
       "GitHub Actions",
@@ -103,9 +106,11 @@ const PORTFOLIO = {
       "Unix/Linux",
       "Reinforcement Learning",
       "Time Series Analysis",
+      "Event-Driven Architecture",
       "Microservices",
       "Query Optimization",
       "RAG",
+      "Vector Search (pgvector)",
     ],
   },
 
@@ -116,8 +121,9 @@ const PORTFOLIO = {
       location: "Coimbatore, India",
       date: "May 2025 – September 2025",
       bullets: [
-        "Engineered a full-stack Travel Planner and Booking System using Spring Boot and Angular, designing and integrating 10+ RESTful APIs to centralize itinerary, booking, and user preference data across the booking workflow.",
-        "Integrated a Generative AI-based recommendation engine that evaluates 3 key signals — user interests, budget, and trip duration — to generate context-aware personalized travel recommendations for users.",
+        "Engineered a full-stack travel planning and booking platform using Angular, Spring Boot, PostgreSQL, and Redis, designing 15+ RESTful APIs with JWT-based RBAC, transactional persistence, and caching.",
+        "Designed an event-driven booking architecture using Apache Kafka, Redis caching, and Resilience4j circuit breakers, targeting 30–40% lower read latency while maintaining idempotency under concurrent requests.",
+        "Integrated an LLM-assisted recommendation engine combining user preferences, budget, and trip duration to generate personalized itineraries, containerizing services with Docker and targeting 80%+ test coverage.",
       ],
     },
     {
@@ -126,8 +132,9 @@ const PORTFOLIO = {
       location: "Remote",
       date: "June 2024 – August 2024",
       bullets: [
-        "Designed and trained a fraud detection model using anomaly detection and supervised machine learning on over 200,000 credit card transactions, reaching 98% classification accuracy on live transaction data.",
-        "Optimized machine learning algorithms and re-engineered data preprocessing pipelines for production models, improving predictive accuracy by 12–15% across multiple live projects and reporting dashboards.",
+        "Engineered an end-to-end fraud detection system over 200,000+ credit card transactions, benchmarking XGBoost, Random Forest, Logistic Regression, and Isolation Forest under severe class imbalance.",
+        "Optimized model features and decision thresholds to target 90%+ fraud recall, productionizing the model through a FastAPI inference service with real-time risk scoring and batch inference.",
+        "Developed a model monitoring and retraining pipeline tracking feature drift and prediction quality, targeting under 100 ms online scoring latency with Dockerized deployment and automated validation gates.",
       ],
     },
   ],
@@ -181,7 +188,7 @@ const PORTFOLIO = {
       date: "July 2026 – August 2026",
       tags: ["Featured", "Full-Stack", "AI/ML"],
       description:
-        "Policy-aware routing layer for LLM requests that goes beyond prompt-complexity routing (RouteLLM, LiteLLM) by adding identity, per-project authorization, budget enforcement, and a full audit trail — plus a Quality/Cost/Balanced routing dial, automatic tier failover on real Groq API errors, and per-user conversation memory. Benchmarked the heuristic classifier against a 30-prompt hand-labeled oracle using live Groq calls, reaching 100% accuracy (up from an initial 80%) while cutting inference cost 27.9% versus always routing to the frontier tier.",
+        "Policy-aware routing layer for LLM requests that goes beyond prompt-complexity routing (RouteLLM, LiteLLM) by adding identity, per-project authorization, budget enforcement, and a full audit trail — plus a Quality/Cost/Balanced routing dial, automatic tier failover on real Groq API errors, and per-user conversation memory. Benchmarked the classifier against a 30-prompt hand-labeled oracle with live Groq calls (100% accuracy), then added a blind, position-randomized LLM-judge benchmark showing 33.2% lower cost than always-frontier at 93.3% quality retention. Fixed a budget race (8 concurrent requests overshot a $1.00 cap by 8x) with reserve/settle transactions, windowed budgets to the calendar month, and capped conversation history.",
       stack: ["Python", "FastAPI", "SQLite", "Groq API", "Claude API", "Pydantic"],
       github: "https://github.com/jayminsheladia/Model_Router",
     },
@@ -205,11 +212,11 @@ const PORTFOLIO = {
     },
     {
       title: "TechHire: AI-Powered Job Search Platform",
-      date: "June 2026 – August 2026",
+      date: "June 2026 – September 2026",
       tags: ["Featured", "Full-Stack", "AI/ML"],
       description:
-        "Full-stack AI-powered job search platform aggregating 1,037 real job postings from 27+ company boards via Greenhouse, Lever, and Ashby integrations. An AI-driven job intelligence pipeline runs 3 Groq LLMs concurrently with a synthesis pass to generate context-aware job summaries, resume-to-job scoring, and section-level rewrite recommendations. Redis-backed query caching and rate limiting cut mean request latency from 5.81 ms to 2.81 ms (2.1x speedup) while sustaining approximately 498 req/s at 40 concurrent requests.",
-      stack: ["React", "FastAPI", "PostgreSQL", "Redis", "Groq API", "Python"],
+        "Full-stack AI job search platform aggregating 1,000+ real postings from 27+ company boards via Greenhouse, Lever, and Ashby. Added a RAG pipeline (\"Ask TechHire\") with structure-aware chunking, local bge-small embeddings, and hybrid dense/lexical retrieval on pgvector HNSW, raising top-10 hit rate from 68% to 92% (0.919 Hit@10) on a 74-question frozen eval set and answering 15/15 grounded questions with valid citations while correctly abstaining on 10/10 unanswerable ones. Rebuilt the AI flows on LangGraph — a 3-model summary ensemble with fan-in and failure routing, plus grounded Q&A with a citation-check retry — and re-measured performance on a 50k-row dataset: Redis caching gives 13.8x faster cache hits (19.1 → 1.38 ms) and 4 workers sustain 4,109 req/s.",
+      stack: ["React", "FastAPI", "PostgreSQL", "pgvector", "Redis", "LangGraph", "Groq API", "Python"],
       github: "https://github.com/jayminsheladia/TechHire",
     },
     {
@@ -217,7 +224,7 @@ const PORTFOLIO = {
       date: "March 2026 – April 2026",
       tags: ["Featured", "Algorithms"],
       description:
-        "Implemented and comparatively evaluated classical Needleman-Wunsch dynamic programming against Hirschberg's memory-efficient divide-and-conquer algorithm for global DNA sequence alignment. Validated the theoretical O(m×n) → O(m+n) memory reduction empirically, confirming up to 90% lower peak memory usage with bit-for-bit identical optimal alignments across increasing input sizes.",
+        "Implemented and comparatively evaluated classical Needleman-Wunsch dynamic programming against Hirschberg's memory-efficient divide-and-conquer algorithm for global DNA sequence alignment. Validated the O(m×n) → O(m+n) memory reduction with tracemalloc benchmarks: 90.4% lower peak memory at m+n=128, rising to 99.8% at m+n=4096 (147.8 MB → 0.3 MB), at a 1.3–1.9x runtime cost. A randomized differential test confirmed cost-optimality in 200/200 trials.",
       stack: ["Python"],
       github: "https://github.com/jayminsheladia/Sequence-Alignment",
     },
