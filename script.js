@@ -16,6 +16,7 @@
     Databases: "#fbbf24",
     Tools: "#f472b6",
     Concepts: "#a78bfa",
+    "AI Dev Tools": "#38bdf8",
   };
   const SECTION_COLORS = {
     experience: "#60a5fa",

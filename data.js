@@ -109,9 +109,11 @@ const PORTFOLIO = {
       "Event-Driven Architecture",
       "Microservices",
       "Query Optimization",
+      "Database Internals",
       "RAG",
       "Vector Search (pgvector)",
     ],
+    "AI Dev Tools": ["Claude Code", "Cursor", "GitHub Copilot", "ChatGPT", "MCP", "Agentic Workflows"],
   },
 
   experience: [
@@ -145,8 +147,8 @@ const PORTFOLIO = {
       role: "Co-author · Published Research Paper",
       date: "2025",
       bullets: [
-        "Compared 4 deep learning architectures (CNN, RNN, LSTM, Bi-LSTM) for malicious URL detection, engineering character-level preprocessing pipelines on the IEEE Dataport dataset.",
-        "Achieved 99.25% accuracy with the Bi-LSTM model, outperforming CNN (86.5%), LSTM (63.75%), and RNN (53%) baselines.",
+        "Compared 4 deep learning architectures (CNN, RNN, LSTM, Bi-LSTM) for malicious URL detection, engineering character-level preprocessing pipelines on the IEEE Dataport dataset for sequential analysis at scale.",
+        "Achieved 99.25% accuracy with the Bi-LSTM model, outperforming CNN (86.5%), LSTM (63.75%), and RNN (53%) baselines across standard classification and error-rate metrics.",
       ],
     },
   ],
@@ -188,7 +190,7 @@ const PORTFOLIO = {
       date: "July 2026 – August 2026",
       tags: ["Featured", "Full-Stack", "AI/ML"],
       description:
-        "Policy-aware routing layer for LLM requests that goes beyond prompt-complexity routing (RouteLLM, LiteLLM) by adding identity, per-project authorization, budget enforcement, and a full audit trail — plus a Quality/Cost/Balanced routing dial, automatic tier failover on real Groq API errors, and per-user conversation memory. Benchmarked the classifier against a 30-prompt hand-labeled oracle with live Groq calls (100% accuracy), then added a blind, position-randomized LLM-judge benchmark showing 33.2% lower cost than always-frontier at 93.3% quality retention. Fixed a budget race (8 concurrent requests overshot a $1.00 cap by 8x) with reserve/settle transactions, windowed budgets to the calendar month, and capped conversation history.",
+        "Policy-aware routing layer for LLM requests that goes beyond prompt-complexity routing (RouteLLM, LiteLLM) by adding identity, per-project authorization, budget enforcement, and a full audit trail — plus a Quality/Cost/Balanced routing dial, automatic tier failover on real Groq API errors, and per-user conversation memory. Grew the hand-labeled oracle set from 30 to 90 prompts, which surfaced three generalizable classifier gaps and a self-grading bias in the original LLM-judge benchmark (the frontier model was grading its own answers). Fixed both: 97.8% classifier accuracy (88/90) at 36.4% lower cost, and a redesigned judge — a primary judge that never grades its own output, with the frontier model's self-judgment kept only as an agreement check — showing 72.2% quality retention at 39.5% cost savings with 66.1% inter-judge agreement. Also fixed a budget race (8 concurrent requests overshot a $1.00 cap by 8x) with reserve/settle transactions, windowed budgets to the calendar month, capped conversation history, and added a startup check that catches Groq model retirements before they crash a benchmark mid-run.",
       stack: ["Python", "FastAPI", "SQLite", "Groq API", "Claude API", "Pydantic"],
       github: "https://github.com/jayminsheladia/Model_Router",
     },
