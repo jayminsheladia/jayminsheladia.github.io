@@ -32,7 +32,7 @@ const PORTFOLIO = {
   education: [
     {
       school: "University of Southern California",
-      location: "Los Angeles, USA",
+      location: "Los Angeles, CA",
       degree: "Master of Science in Computer Science",
       date: "January 2026 – December 2027",
       note: "Coursework: Analysis of Algorithms, Agentic AI, Applied NLP, Web Technologies, Database Systems",
@@ -42,7 +42,7 @@ const PORTFOLIO = {
       location: "Dehradun, India",
       degree: "B.Tech in Computer Science and Engineering",
       date: "October 2021 – June 2025",
-      note: "Coursework: Operating Systems, Network & System Security, Computer Networks, OOPs, Software Engineering",
+      note: "Coursework: Operating Systems, Computer Networks, Object-Oriented Programming, Software Engineering",
     },
   ],
 
@@ -81,6 +81,8 @@ const PORTFOLIO = {
       "Voyage AI",
       "XGBoost",
       "LangGraph",
+      "uAgents",
+      "asyncio",
       "Groq API",
     ],
     "Databases": ["MySQL", "MongoDB", "PostgreSQL", "Redis", "Apache Kafka"],
@@ -110,6 +112,8 @@ const PORTFOLIO = {
       "Microservices",
       "Query Optimization",
       "Database Internals",
+      "Multi-Agent Orchestration",
+      "Workflow Automation",
       "RAG",
       "Vector Search (pgvector)",
     ],
@@ -123,9 +127,9 @@ const PORTFOLIO = {
       location: "Coimbatore, India",
       date: "May 2025 – September 2025",
       bullets: [
-        "Engineered a full-stack travel planning and booking platform using Angular, Spring Boot, PostgreSQL, and Redis, designing 15+ RESTful APIs with JWT-based RBAC, transactional persistence, and caching.",
-        "Designed an event-driven booking architecture using Apache Kafka, Redis caching, and Resilience4j circuit breakers, targeting 30–40% lower read latency while maintaining idempotency under concurrent requests.",
-        "Integrated an LLM-assisted recommendation engine combining user preferences, budget, and trip duration to generate personalized itineraries, containerizing services with Docker and targeting 80%+ test coverage.",
+        "Engineered a full-stack travel planning and booking platform using Angular, Spring Boot, PostgreSQL, and Redis, exposing 15+ RESTful APIs with JWT-based RBAC, transactional persistence, and caching.",
+        "Designed an event-driven booking architecture with Apache Kafka, Redis caching, and Resilience4j circuit breakers, reducing read latency by 30–40% while preserving idempotent processing of concurrent booking requests.",
+        "Integrated an LLM-assisted recommendation engine combining user preferences, budget, and trip duration to generate personalized itineraries, containerizing services with Docker and achieving 80%+ test coverage.",
       ],
     },
     {
@@ -134,9 +138,9 @@ const PORTFOLIO = {
       location: "Remote",
       date: "June 2024 – August 2024",
       bullets: [
-        "Engineered an end-to-end fraud detection system over 200,000+ credit card transactions, benchmarking XGBoost, Random Forest, Logistic Regression, and Isolation Forest under severe class imbalance.",
-        "Optimized model features and decision thresholds to target 90%+ fraud recall, productionizing the model through a FastAPI inference service with real-time risk scoring and batch inference.",
-        "Developed a model monitoring and retraining pipeline tracking feature drift and prediction quality, targeting under 100 ms online scoring latency with Dockerized deployment and automated validation gates.",
+        "Developed an end-to-end fraud detection system over 200,000+ credit card transactions, benchmarking XGBoost, Random Forest, Logistic Regression, and Isolation Forest under severe class imbalance.",
+        "Optimized model features and decision thresholds to achieve 90%+ fraud recall, deploying the model through a FastAPI inference service with real-time transaction risk scoring and batch inference.",
+        "Automated a model monitoring and retraining pipeline tracking feature drift and prediction quality, recording under 100 ms online scoring latency with Dockerized deployment and automated validation gates.",
       ],
     },
   ],
@@ -147,8 +151,8 @@ const PORTFOLIO = {
       role: "Co-author · Published Research Paper",
       date: "2025",
       bullets: [
-        "Compared 4 deep learning architectures (CNN, RNN, LSTM, Bi-LSTM) for malicious URL detection, engineering character-level preprocessing pipelines on the IEEE Dataport dataset for sequential analysis at scale.",
-        "Achieved 99.25% accuracy with the Bi-LSTM model, outperforming CNN (86.5%), LSTM (63.75%), and RNN (53%) baselines across standard classification and error-rate metrics.",
+        "Compared 4 deep learning architectures (CNN, RNN, LSTM, Bi-LSTM) for malicious URL detection, applying character-level preprocessing to the IEEE Dataport dataset for sequential classification.",
+        "Achieved 99.25% accuracy with Bi-LSTM, outperforming CNN (86.5%), LSTM (63.75%), and RNN (53%) baselines across classification and error-rate metrics.",
       ],
     },
   ],
@@ -176,6 +180,15 @@ const PORTFOLIO = {
 
   // tags are used for the filter bar in the Projects section
   projects: [
+    {
+      title: "Haggle: Multi-Agent Catering Marketplace",
+      date: "October 2026",
+      tags: ["Featured", "AI/ML"],
+      description:
+        "Multi-agent group catering marketplace for Los Angeles built at LA Hacks AI 2026 (Fetch.ai track): a user describes their event in ASI:One, and six agents find real LA caterers, collect quotes, negotiate within each business's rules, take a test-mode Stripe deposit, book, and rescue leftover food afterwards. Delivered 3 of the 6 agents — built Discovery and co-developed Booker and Follow-up. Discovery runs Google Places and Agentverse registry searches in parallel with asyncio, adds radius filters and per-area TTL caching, and falls back to whichever source still answers when the other fails or times out; Booker handles payment verification and idempotent bookings, and Follow-up handles food-rescue matching.",
+      stack: ["Python", "uAgents", "asyncio", "Agentverse", "ASI:One", "Google Places API", "Stripe"],
+      github: "https://github.com/jayminsheladia/Haggle",
+    },
     {
       title: "Agent Reliability Infrastructure (ARI)",
       date: "August 2026",
@@ -235,8 +248,8 @@ const PORTFOLIO = {
       date: "July 2025 – August 2025",
       tags: ["Featured", "AI/ML", "Computer Vision"],
       description:
-        "Real-time computer vision system using OpenCV and TensorFlow to classify hand gestures into text for gesture translation, achieving 98% accuracy across a diverse gesture set. Trained and fine-tuned a Keras-based deep learning model on a custom gesture dataset, optimizing preprocessing and inference for smooth, low-latency video translation.",
-      stack: ["Python", "OpenCV", "TensorFlow", "Keras"],
+        "Real-time hand sign and gesture recognition from a webcam feed. MediaPipe Hands extracts 21 landmarks per hand, and two small TensorFlow Lite networks classify them: a static hand-sign classifier (Hello, Stop, Pointer, OK) at 97.24% test accuracy and a fingertip-motion gesture classifier (Stop, Clockwise, Counter Clockwise, Move) at 96.37%. Working on normalized landmark coordinates instead of raw pixels keeps each model to about 1.1k parameters (6 KB), so classification adds under 0.01 ms per frame on CPU and tracks up to two hands at once.",
+      stack: ["Python", "MediaPipe", "TensorFlow Lite", "Keras", "OpenCV"],
       github: "https://github.com/jayminsheladia/Real-Time-Sign-Language-Detection",
     },
     {
