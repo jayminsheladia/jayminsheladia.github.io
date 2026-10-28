@@ -123,13 +123,13 @@ const PORTFOLIO = {
   experience: [
     {
       company: "Cognizant Technology Solutions",
-      role: "Programmer Analyst Trainee – Software Engineering",
+      role: "Programmer Analyst Trainee",
       location: "Coimbatore, India",
       date: "May 2025 – September 2025",
       bullets: [
-        "Engineered a full-stack travel planning and booking platform using Angular, Spring Boot, PostgreSQL, and Redis, exposing 15+ RESTful APIs with JWT-based RBAC, transactional persistence, and caching.",
+        "Engineered a full-stack travel planning and booking platform using Angular, Spring Boot, PostgreSQL, and Redis, delivering 15+ RESTful APIs with JWT-based RBAC, transactional persistence, and caching.",
         "Designed an event-driven booking architecture with Apache Kafka, Redis caching, and Resilience4j circuit breakers, reducing read latency by 30–40% while preserving idempotent processing of concurrent booking requests.",
-        "Integrated an LLM-assisted recommendation engine combining user preferences, budget, and trip duration to generate personalized itineraries, containerizing services with Docker and achieving 80%+ test coverage.",
+        "Integrated an LLM-assisted recommendation engine combining user preferences, budget, and trip duration to generate personalized itineraries; containerized services with Docker and achieved 80%+ test coverage.",
       ],
     },
     {
@@ -138,8 +138,8 @@ const PORTFOLIO = {
       location: "Remote",
       date: "June 2024 – August 2024",
       bullets: [
-        "Developed an end-to-end fraud detection system over 200,000+ credit card transactions, benchmarking XGBoost, Random Forest, Logistic Regression, and Isolation Forest under severe class imbalance.",
-        "Optimized model features and decision thresholds to achieve 90%+ fraud recall, deploying the model through a FastAPI inference service with real-time transaction risk scoring and batch inference.",
+        "Developed an end-to-end fraud detection system for 200,000+ credit card transactions, establishing baselines for imbalanced data by benchmarking XGBoost, Random Forest, Logistic Regression, and Isolation Forest.",
+        "Optimized model features and decision thresholds, achieving 90%+ fraud recall; deployed the model through a FastAPI inference service with real-time transaction risk scoring and batch inference.",
         "Automated a model monitoring and retraining pipeline tracking feature drift and prediction quality, recording under 100 ms online scoring latency with Dockerized deployment and automated validation gates.",
       ],
     },
@@ -151,7 +151,7 @@ const PORTFOLIO = {
       role: "Co-author · Published Research Paper",
       date: "2025",
       bullets: [
-        "Compared 4 deep learning architectures (CNN, RNN, LSTM, Bi-LSTM) for malicious URL detection, applying character-level preprocessing to the IEEE Dataport dataset for sequential classification.",
+        "Compared 4 deep learning architectures (CNN, RNN, LSTM, Bi-LSTM) for malicious URL detection using character-level preprocessing on the IEEE Dataport dataset, establishing accuracy and error-rate baselines.",
         "Achieved 99.25% accuracy with Bi-LSTM, outperforming CNN (86.5%), LSTM (63.75%), and RNN (53%) baselines across classification and error-rate metrics.",
       ],
     },
@@ -185,8 +185,8 @@ const PORTFOLIO = {
       date: "October 2026",
       tags: ["Featured", "AI/ML"],
       description:
-        "Multi-agent group catering marketplace for Los Angeles built at LA Hacks AI 2026 (Fetch.ai track): a user describes their event in ASI:One, and six agents find real LA caterers, collect quotes, negotiate within each business's rules, take a test-mode Stripe deposit, book, and rescue leftover food afterwards. Delivered 3 of the 6 agents — built Discovery and co-developed Booker and Follow-up. Discovery runs Google Places and Agentverse registry searches in parallel with asyncio, adds radius filters and per-area TTL caching, and falls back to whichever source still answers when the other fails or times out; Booker handles payment verification and idempotent bookings, and Follow-up handles food-rescue matching.",
-      stack: ["Python", "uAgents", "asyncio", "Agentverse", "ASI:One", "Google Places API", "Stripe"],
+        "Multi-agent group catering marketplace for Los Angeles built at LA Hacks AI 2026, where it won Fetch.ai runner-up honors: a user describes their event in ASI:One, and six agents find real LA caterers, collect quotes, negotiate within each business's rules, take a test-mode Stripe deposit, book, and rescue leftover food afterwards. Delivered 3 of the 6 agents — built Discovery and co-developed Booker and Follow-up. Discovery runs Google Places and Agentverse registry searches in parallel with asyncio, adds radius filters and per-area TTL caching, and falls back to whichever source still answers when the other fails or times out; Booker handles payment verification and idempotent bookings, and Follow-up handles food-rescue matching. Also added Sentry tracing and Photon booking notifications.",
+      stack: ["Python", "uAgents", "asyncio", "Agentverse", "ASI:One", "Google Places API", "Stripe", "Sentry", "Photon"],
       github: "https://github.com/jayminsheladia/Haggle",
     },
     {
